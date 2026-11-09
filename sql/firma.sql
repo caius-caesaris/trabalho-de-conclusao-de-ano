@@ -6,7 +6,7 @@ create table cliente (
 );
 
 create table tecnico (
-  cpf char(11) primary key not null,
+  cpf char(11) primary key not null unique,
   nome varchar(51) not null,
   data_nascimento date not null,
   data_admissao date default current_date,
