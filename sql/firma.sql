@@ -16,12 +16,12 @@ create table tecnico (
 
 create table marca (
   id serial primary key,
-  nome varchar(10)
+  nome varchar(15) not null unique
 );
 
 create table aparelho (
   id serial primary key,
-  nome varchar(10)
+  nome varchar(30) not null unique
 );
 
 create table ordem (
