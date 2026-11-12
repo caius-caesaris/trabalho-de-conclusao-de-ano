@@ -3,7 +3,7 @@ const database = createClient(config.url, config.publishableKey);
 
 async function entrar() {
     const { data, error } =
-        await banco.auth.signInWithPassword({
+        await database.auth.signInWithPassword({
             email: config.email,
             password: config.senha
         });
