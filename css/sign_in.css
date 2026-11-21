@@ -1,7 +1,7 @@
 @import url(modern-normalize.css);
 
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 fieldset {
