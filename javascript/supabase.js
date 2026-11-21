@@ -1,20 +1,9 @@
+const config = {
+        url: 'https://vtivntidbooxppfeqvfv.supabase.co',
+        publishableKey: 'sb_publishable_ppZtNMuqQXHu786n86d6Lg_p2aRnmsC',
+        email: '',
+        password: ''
+};
+
 const { createClient } = supabase;
 const database = createClient(config.url, config.publishableKey);
-
-async function entrar() {
-    const { data, error } =
-        await database.auth.signInWithPassword({
-            email: config.email,
-            password: config.senha
-        });
-
-    if (error) {
-        console.log(error.message);
-        return;
-    } else {
-        return data;
-    }
-    // console.log(data.user.email);
-}
-
-entrar();
