@@ -13,6 +13,7 @@ async function signIn(e) {
     }
     
     console.log('login_feedback');
+    window.location.href = 'html/main.html';
 }
 
 form.addEventListener('submit', signIn);
