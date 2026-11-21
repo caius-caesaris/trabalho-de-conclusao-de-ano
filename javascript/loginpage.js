@@ -16,7 +16,7 @@ async function entrar() {
     const { data, error } =
         await database.auth.signInWithPassword({
             email: config.email,
-            password: config.senha
+            password: config.password
         });
 
     if (error) {
