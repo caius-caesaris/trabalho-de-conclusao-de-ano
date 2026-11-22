@@ -1,6 +1,7 @@
 :root {
     --background-color: rgb(0, 0, 0);
     --background-color-secondary: rgb(15, 15, 15);
-    --border-color: rgb(50, 50, 50);
+    --border-color: rgb(30, 30, 30);
     --text-color: rgb(255, 255, 255);
+    --transitions: 0.15s;
 }
