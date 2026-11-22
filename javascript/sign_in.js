@@ -9,12 +9,13 @@ async function signIn(e) {
     const { error } = await database.auth.signInWithPassword({email: email.value, password: password.value});
 
     if (error) {
-    errlabel.style.display = 'block';
         console.error(error.message);
+        errlabel.style.display = 'block';
         return;
     }
     
     console.log('login_feedback');
+    errlabel.style.display = 'none';
     window.location.href = 'html/main.html';
 }
 
