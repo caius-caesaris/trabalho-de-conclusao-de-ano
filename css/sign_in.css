@@ -1,22 +1,35 @@
 @import url(modern-normalize.css);
+@import url(variables.css);
 
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 fieldset {
     margin: auto;
     margin-top: 35vh;
-    width: 15vw;
-    height: 100%;
-    border-radius: 4px;
+    width: fit-content;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    padding: 10px;
 }
 
 form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+form div {
+    margin: 5px;
 }
 
 #submit {
@@ -25,6 +38,26 @@ form {
     padding-top: 3%;
 }
 
+label, p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+p {
+    font-weight: normal;
+    font-size: large;
+    color: var(--danger-color);
+    display: none;
+}
+
 input {
-    width: 95%;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
+
+    padding-left: 5px;
+
+    font-size: small;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
 }

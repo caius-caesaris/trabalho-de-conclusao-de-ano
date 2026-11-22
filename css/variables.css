@@ -3,5 +3,7 @@
     --background-color-secondary: rgb(15, 15, 15);
     --border-color: rgb(30, 30, 30);
     --text-color: rgb(255, 255, 255);
+    --warn-color: rgb(240, 240, 0);
+    --danger-color: rgb(240, 0, 0);
     --transitions: 0.15s;
 }
