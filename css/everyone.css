@@ -88,6 +88,16 @@ hr {
     border-color: var(--border-color);
 }
 
+label {
+    color: var(--text-color);
+    font-weight: normal;
+    font-size: large;
+}
+
 footer {
     border-top: 1px solid var(--border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

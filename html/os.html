@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/favicon.png">
     <title>Assistência Técnica</title>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1><a href="main.html">Assistência Técnica</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="main.html">Acessar</a>
+        <a href="os.html">Ordem de Serviço</a>
+        <a href="edit.html">Editar Informações</a>
+        <a href="mgr.html">Gerenciar Banco de Dados</a>
+    </nav>
+
+    <main>
+        <section>
+            <div id="topbar_cliente">
+                <h2>Criar Ordem de Serviço</h2>
+            </div>
+            <hr>
+            <form>
+                <label for="client_selecion">Cliente:</label>
+                <select id="client_selection" required>
+
+                </select>
+
+                <label for="tech_selecion">Técnico:</label>
+                <select id="tech_selection" required>
+                    
+                </select>
+
+                <label for="trade_selecion">Técnico:</label>
+                <select id="trade_selection" required>
+                    
+                </select>
+
+                <label for="dev_selecion">Técnico:</label>
+                <select id="dev_selection" required>
+                    
+                </select>
+
+                <label for="modelo">Modelo:</label>
+                <input id="modelo" type="text" required>
+                
+                <label for="sintoma">Sintoma:</label>
+                <input id="sintoma" type="text" required>
+
+                <label for="defeito">Defeito:</label>
+                <input id="defeito" type="text">
+
+                <label for="orcamento">Orçamento:</label>
+                <input id="orcamento" type="number" min="0">
+
+                <label for="retirada">Retirada:</label>
+                <input id="retirada" type="date" disabled>
+
+                <label for="entrega">Entrega:</label>
+                <input id="entrega" type="date">
+
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        <p>Assistência Técnica &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="../javascript/supabase.js"></script>
+    <script src="../javascript/os.js"></script>
 </body>
 </html>
