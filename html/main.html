@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/favicon.png">
     <title>Assistência Técnica</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             <div id="topbar_cliente">
                 <h2>Buscar clientes</h2>
                 <div>
-                    <button type="submit">Buscar</button>
+                    <button id="button_cliente" type="submit">Buscar</button>
                     <label for="pesquisar_cliente"></label>
                     <input id="pesquisar_cliente" type="text" placeholder="Procurar por nome">
                 </div>
@@ -38,7 +39,7 @@
             <div id="topbar_cliente">
                 <h2>Ordens de Serviço</h2>
                 <div>
-                    <button type="submit">Buscar</button>
+                    <button id="button_ordem" type="submit">Buscar</button>
                     <label for="pesquisar_ordem"></label>
                     <input id="pesquisar_ordem" type="text" placeholder="Procurar por número">
                 </div>
