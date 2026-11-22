@@ -65,6 +65,8 @@ input {
     background-color: var(---background-color-secondary);
     color: var(--text-color);
 
+    padding-left: 5px;
+
     font-size: small;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -73,6 +75,8 @@ input {
 button {
     background-color: var(---background-color-secondary);
     color: var(--text-color);
+
+    cursor: pointer;
 
     font-size: small;
     border: 1px solid var(--border-color);
