@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/os.css">
     <link rel="icon" href="../img/favicon.png">
     <title>Assistência Técnica</title>
 </head>
@@ -28,52 +28,141 @@
             </div>
             <hr>
             <form>
-                <label for="client_selecion">Cliente:</label>
-                <select id="client_selection" required>
+                <div>
+                    <label for="client_selecion">Cliente:</label>
+                    <select id="client_selection" required>
 
-                </select>
+                    </select> 
+                </div>
 
-                <label for="tech_selecion">Técnico:</label>
-                <select id="tech_selection" required>
-                    
-                </select>
+                <div>
+                    <label for="tech_selecion">Técnico:</label>
+                    <select id="tech_selection" required>
+                        
+                    </select>
+                </div>
 
-                <label for="trade_selecion">Técnico:</label>
-                <select id="trade_selection" required>
-                    
-                </select>
+                <div>
+                    <label for="trade_selecion">Marca:</label>
+                    <select id="trade_selection" required>
+                        
+                    </select>
+                </div>
 
-                <label for="dev_selecion">Técnico:</label>
-                <select id="dev_selection" required>
-                    
-                </select>
+                <div>
+                    <label for="dev_selecion">Aparelho:</label>
+                    <select id="dev_selection" required>
+                        
+                    </select>
+                </div>
 
-                <label for="modelo">Modelo:</label>
-                <input id="modelo" type="text" required>
+                <div>
+                    <label for="modelo">Modelo:</label>
+                    <input id="modelo" type="text" required>
+                </div>
                 
-                <label for="sintoma">Sintoma:</label>
-                <input id="sintoma" type="text" required>
+                <div>
+                    <label for="sintoma">Sintoma:</label>
+                    <input id="sintoma" type="text" required>
+                </div>
 
-                <label for="defeito">Defeito:</label>
-                <input id="defeito" type="text">
+                <div>
+                    <label for="defeito">Defeito:</label>
+                    <input id="defeito" type="text">
+                </div>
 
-                <label for="orcamento">Orçamento:</label>
-                <input id="orcamento" type="number" min="0">
+                <div>
+                    <label for="orcamento">Orçamento:</label>
+                    <input id="orcamento" type="number" min="0">
+                </div>
 
-                <label for="retirada">Retirada:</label>
-                <input id="retirada" type="date" disabled>
+                <div>
+                    <label for="retirada">Retirada:</label>
+                    <input id="retirada" type="date" disabled>
+                </div>
 
-                <label for="entrega">Entrega:</label>
-                <input id="entrega" type="date">
-
+                <div>
+                    <label for="entrega">Entrega:</label>
+                    <input id="entrega" type="date">
+                </div>
+                
                 <button type="submit">Criar</button>
+            </form>
+        </section>
+
+        <section>
+            <div id="edit_topbar_cliente">
+                <h2>Editar Ordem de Serviço</h2>
+                <input type="number">
+            </div>
+            <hr>
+            <form>
+                <div>
+                    <label for="edit_client_selecion">Cliente:</label>
+                    <select id="edit_client_selection" required>
+
+                    </select> 
+                </div>
+
+                <div>
+                    <label for="edit_tech_selecion">Técnico:</label>
+                    <select id="edit_tech_selection" required>
+                        
+                    </select>
+                </div>
+
+                <div>
+                    <label for="edit_trade_selecion">Marca:</label>
+                    <select id="edit_trade_selection" required>
+                        
+                    </select>
+                </div>
+
+                <div>
+                    <label for="edit_dev_selecion">Aparelho:</label>
+                    <select id="edit_dev_selection" required>
+                        
+                    </select>
+                </div>
+
+                <div>
+                    <label for="edit_modelo">Modelo:</label>
+                    <input id="edit_modelo" type="text" required>
+                </div>
+                
+                <div>
+                    <label for="edit_sintoma">Sintoma:</label>
+                    <input id="edit_sintoma" type="text" required>
+                </div>
+
+                <div>
+                    <label for="edit_defeito">Defeito:</label>
+                    <input id="edit_defeito" type="text">
+                </div>
+
+                <div>
+                    <label for="edit_orcamento">Orçamento:</label>
+                    <input id="edit_orcamento" type="number" min="0">
+                </div>
+
+                <div>
+                    <label for="edit_retirada">Retirada:</label>
+                    <input id="edit_retirada" type="date" disabled>
+                </div>
+
+                <div>
+                    <label for="edit_entrega">Entrega:</label>
+                    <input id="edit_entrega" type="date">
+                </div>
+                
+                <button type="submit">Editar</button>
             </form>
         </section>
     </main>
 
     <footer>
         <div>
-        <p>Assistência Técnica &copy; Todos os direitos reservados</p>
+            <p>Assistência Técnica &copy; Todos os direitos reservados</p>
         </div>
     </footer>
     <script src="../javascript/supabase.js"></script>

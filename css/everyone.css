@@ -94,6 +94,11 @@ label {
     font-size: large;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     border-top: 1px solid var(--border-color);
 
