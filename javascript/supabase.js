@@ -5,5 +5,16 @@ const config = {
         password: ''
 };
 
+async function p() {
+    const { data: { session }, error } = await database.auth.getSession();
+
+    if (error || !session) {
+        window.location.href = '../index.html';
+        return;
+    }
+
+    return;
+}
+
 const { createClient } = supabase;
 const database = createClient(config.url, config.publishableKey);
