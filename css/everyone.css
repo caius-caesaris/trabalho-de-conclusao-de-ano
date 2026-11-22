@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 header div {
     background-color: var(--background-color);
     padding-left: 10px;
@@ -10,6 +15,18 @@ header div {
 
     display: flex;
     align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: larger;
 }
 
 nav {
@@ -32,15 +49,39 @@ nav a {
     font-weight: bold;
 }
 
-h1 {
-    margin: 0;
-    font-weight: bolder;
-    font-size: x-large;
+section {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50vw;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    padding: 10px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+input {
+    background-color: var(---background-color-secondary);
     color: var(--text-color);
-    text-decoration: none;
+
+    font-size: small;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(---background-color-secondary);
+    color: var(--text-color);
+
+    font-size: small;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+hr {
+    border-top: none;
+    border-color: var(--border-color);
 }
 
 footer {
