@@ -1,0 +1,42 @@
+header div {
+    background-color: var(--background-color);
+    padding-left: 10px;
+    height: 7vh;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--background-color);
+    height: 4vh;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav  {
+
+}
+
+h1 {
+    margin: 0;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: 0 0 10px rgba(255, 200, 255, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color);
+}
