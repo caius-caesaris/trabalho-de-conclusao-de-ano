@@ -27,11 +27,11 @@
                 <h2>Criar Ordem de Serviço</h2>
             </div>
             <hr>
-            <form>
+            <form id="criar_ordem">
                 <div>
                     <label for="client_selecion">Cliente:</label>
                     <select id="client_selection" required>
-
+                        
                     </select> 
                 </div>
 
@@ -67,26 +67,11 @@
                 </div>
 
                 <div>
-                    <label for="defeito">Defeito:</label>
-                    <input id="defeito" type="text">
-                </div>
-
-                <div>
-                    <label for="orcamento">Orçamento:</label>
-                    <input id="orcamento" type="number" min="0">
-                </div>
-
-                <div>
                     <label for="retirada">Retirada:</label>
                     <input id="retirada" type="date" disabled>
                 </div>
-
-                <div>
-                    <label for="entrega">Entrega:</label>
-                    <input id="entrega" type="date">
-                </div>
                 
-                <button type="submit">Criar</button>
+                <button id="submit_create" type="submit">Criar</button>
             </form>
         </section>
 
@@ -96,43 +81,43 @@
                 <input type="number">
             </div>
             <hr>
-            <form>
+            <form id="editar_ordem">
                 <div>
                     <label for="edit_client_selecion">Cliente:</label>
-                    <select id="edit_client_selection" required>
+                    <select id="edit_client_selection" disabled required>
 
                     </select> 
                 </div>
 
                 <div>
                     <label for="edit_tech_selecion">Técnico:</label>
-                    <select id="edit_tech_selection" required>
+                    <select id="edit_tech_selection" disabled required>
                         
                     </select>
                 </div>
 
                 <div>
                     <label for="edit_trade_selecion">Marca:</label>
-                    <select id="edit_trade_selection" required>
+                    <select id="edit_trade_selection" disabled required>
                         
                     </select>
                 </div>
 
                 <div>
                     <label for="edit_dev_selecion">Aparelho:</label>
-                    <select id="edit_dev_selection" required>
+                    <select id="edit_dev_selection" disabled required>
                         
                     </select>
                 </div>
 
                 <div>
                     <label for="edit_modelo">Modelo:</label>
-                    <input id="edit_modelo" type="text" required>
+                    <input id="edit_modelo" type="text" disabled required>
                 </div>
                 
                 <div>
                     <label for="edit_sintoma">Sintoma:</label>
-                    <input id="edit_sintoma" type="text" required>
+                    <input id="edit_sintoma" type="text" disabled required>
                 </div>
 
                 <div>
@@ -155,7 +140,7 @@
                     <input id="edit_entrega" type="date">
                 </div>
                 
-                <button type="submit">Editar</button>
+                <button id="submit_edit" type="submit">Confirmar</button>
             </form>
         </section>
     </main>
