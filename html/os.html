@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../javascript/components/carnage-header.js"></script>
+    <script type="module" src="../javascript/components/carnage-nav.js"></script>
+    <script type="module" src="../javascript/components/carnage-footer.js"></script>
     <link rel="stylesheet" href="../css/os.css">
     <link rel="icon" href="../img/favicon.png">
     <title>Assistência Técnica</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h1><a href="main.html">Assistência Técnica</a></h1>
-        </div>
-    </header>
+    
+    <carnage-header></carnage-header>
 
-    <nav>
-        <a href="main.html">Acessar</a>
-        <a href="os.html">Ordem de Serviço</a>
-        <a href="edit.html">Editar Informações</a>
-        <a href="mgr.html">Gerenciar Banco de Dados</a>
-    </nav>
+    <carnage-nav></carnage-nav>
 
     <main>
         <section>
@@ -145,11 +140,8 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p>Assistência Técnica &copy; Todos os direitos reservados</p>
-        </div>
-    </footer>
+    <carnage-footer></carnage-footer>
+    
     <script src="../javascript/supabase.js"></script>
     <script src="../javascript/os.js"></script>
 </body>

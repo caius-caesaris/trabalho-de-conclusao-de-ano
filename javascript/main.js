@@ -8,6 +8,7 @@ const clientes_div = document.querySelector('#clientes');
 p();
 
 function placeClients(data) {
+    clientes_div.innerHTML = '';
     data.forEach(c => {
         clientes_div.innerHTML = clientes_div.innerHTML + `<p>${c.id}. ${c.nome} </p>`
     });
