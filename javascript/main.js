@@ -3,11 +3,13 @@ const cliente_b = document.querySelector('#button_cliente');
 const ordem_sb = document.querySelector('#pesquisar_ordem');
 const ordem_b = document.querySelector('#button_ordem');
 
+const clientes_div = document.querySelector('#clientes');
+
 p();
 
 function placeClients(data) {
     data.forEach(c => {
-        console.log(c.nome);
+        clientes_div.innerHTML = clientes_div.innerHTML + `<p>${c.id}. ${c.nome} </p>`
     });
 }
 
