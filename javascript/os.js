@@ -110,11 +110,11 @@ async function createOS(e) {
 
 form_criar.addEventListener('submit', createOS);
 
-function setTextContent() {
-    document.querySelector('#submit_create').textContent = 'Criar';
+function setTextContent(id, text) {
+    document.querySelector(id).textContent = text;
 }
 
-document.querySelector('#submit_create').addEventListener('blur', setTextContent);
+document.querySelector('#submit_create').addEventListener('blur', setTextContent('#submit_create', 'Criar'));
 
 async function loadOS() {
     const {data: ordem, error} = await database.from('ordem').select('*').eq('numero', document.querySelector('#numero_da_ordem').value).single();
@@ -144,3 +144,19 @@ async function loadOS() {
 }
 
 document.querySelector('#numero_da_ordem').addEventListener('blur', loadOS);
+
+async function updateOS(e) {
+    e.preventDefault();
+    const { error } = await database.from('ordem').update({defeito: edit_defeito.value, orcamento: edit_orcamento.value, data_entrega: edit_entrega.value}).eq('numero', document.querySelector('#numero_da_ordem').value);
+
+    if (error) {
+        console.log(error);
+        return;
+    }
+
+    document.querySelector('#submit_edit').textContent = 'Confirmado!';
+}
+
+document.querySelector('#submit_edit').addEventListener('blur', setTextContent('#submit_edit', 'Confirmar'));
+
+document.querySelector('#editar_ordem').addEventListener('submit', updateOS);
